@@ -1,0 +1,134 @@
+/* Tag selectors */
+
+body {
+  font-size: 15px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  color: hsl(229, 23%, 23%);
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+p {
+  color: hsl(227, 10%, 46%);
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+/* Class selectors */
+
+.bg {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-position: -288px -498px, 633px 253px;
+  background-repeat: no-repeat, no-repeat;
+  justify-content: center;
+  height: 720px;
+  width: 1440px;
+}
+
+.wrapper {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 172px 545px 0 545px;
+  width: 350px;
+}
+
+.cover {
+  display: flex;
+  height: 141px;
+  width: 100%;
+}
+
+.cover-pic {
+  border-radius: 10px 10px 0 0;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 260px;
+  left: 667px;
+}
+
+.profile {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 158px;
+  padding-top: 75px;
+  width: 100%;
+}
+
+.age {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.stats-parent {
+  align-items: center;
+  border-top: 1px solid lightgray;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.stats-child {
+  line-height: 1.6;
+  text-align: center;
+  width: 87px;
+}
+
+.stats-child p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.stats {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+}
+
+/* Media selectors */
+
+@media all and (max-width: 400px) {
+  body {
+    width: 375px;
+    height: 667px;
+  }
+  .bg {
+    background-position: -750px -650px, 140px 300px;
+    height: 667px;
+    width: 375px;
+  }
+  .wrapper {
+    padding: 145px 25px 145px 25px;
+    width: 326px;
+  }
+  .profile-pic {
+    position: absolute;
+    top: 244px;
+    left: 134px;
+  }
+  .cover-pic {
+    width: 326px;
+  }
+}
